@@ -1,16 +1,74 @@
-# aesthetic_clock
+🌤️ SkyClock 
+A visually appealing Flutter digital clock with dynamic weather animations and real-time updates.
 
-A new Flutter project.
+🌟 Features
+🕒 Clock
+12/24 hour format toggle
 
-## Getting Started
+Show/hide seconds
 
-This project is a starting point for a Flutter application.
+Smooth background transitions (morning, afternoon, evening, night)
 
-A few resources to get you started if this is your first Flutter project:
+🌦️ Weather
+Real-time weather with animated visuals (rain, snow, clouds, lightning)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Temperature and condition display
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Auto-update every 30 minutes + manual refresh
+
+City selection
+
+⚙️ Customization
+Enable/disable animations
+
+Settings panel with smooth transitions
+
+Preferences saved using SharedPreferences
+
+🧑‍💻 Developer Highlights
+Clean architecture: models, services, components
+
+Graceful error handling & fallback UI
+
+Optimized animations and performance
+
+Scalable structure for future enhancements
+
+🚀 Getting Started
+Clone this repo
+
+Run flutter pub get
+
+Add these assets to assets/images/:
+
+sun.png, moon.png, cloud.png, stormcloud.png, raindrop.png, snowflake.png, lightning.png
+
+Replace the Weather API key in AppConstants
+
+Launch the app:
+
+bash
+Copy
+Edit
+flutter run
+📦 Dependencies
+google_fonts
+
+http
+
+shared_preferences
+
+intl
+
+🔮 Future Plans
+Riverpod or Provider integration
+
+Multi-location support
+
+7-day forecast
+
+Custom themes
+
+🪪 License
+MIT License
+
