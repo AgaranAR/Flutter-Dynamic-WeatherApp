@@ -1,51 +1,89 @@
-🌤️ SkyClock 
-A visually appealing Flutter digital clock with dynamic weather animations and real-time updates.
+# ⏰ WeatherClock
 
-🌟 Features
-🕒 Clock
-12/24 hour format toggle
+A beautiful Flutter digital clock app with real-time animated weather and customizable features.
 
-Show/hide seconds
+---
 
-Smooth background transitions (morning, afternoon, evening, night)
+## 🌦️ Features
 
-🌦️ Weather
-Real-time weather with animated visuals (rain, snow, clouds, lightning)
+### 📱 User-Friendly
 
-Temperature and condition display
+- Real-time weather animations (rain, clouds, snow, lightning)
+- Temperature and weather condition display
+- Tap to manually refresh weather
+- Automatic updates every 30 minutes
 
-Auto-update every 30 minutes + manual refresh
+### 🎨 Customizable Settings
 
-City selection
+- City selection for weather
+- 12/24 hour clock toggle
+- Show/hide seconds
+- Enable/disable animations for performance
 
-⚙️ Customization
-Enable/disable animations
+### 🖼️ Visual Elements
 
-Settings panel with smooth transitions
+- Background changes based on time of day
+- Sun and moon move across the screen
+- Weather affects background theme
+- Smooth transitions
 
-Preferences saved using SharedPreferences
+### 💾 Persistence
 
-🧑‍💻 Developer Highlights
-Clean architecture: models, services, components
+- Settings stored locally with SharedPreferences
+- Preferences saved between restarts
 
-Graceful error handling & fallback UI
+---
 
-Optimized animations and performance
+## 🧑‍💻 Developer Highlights
 
-Scalable structure for future enhancements
+### ✅ Code Structure
 
-🚀 Getting Started
-Clone this repo
+- Clean separation: models, services, UI
+- Constants in `AppConstants`
+- Easy configuration and extension
 
-Run flutter pub get
+### ⚙️ Performance & Error Handling
 
-Add these assets to assets/images/:
+- Optimized animations
+- Graceful fallbacks for errors
+- Custom error widgets for images
 
-sun.png, moon.png, cloud.png, stormcloud.png, raindrop.png, snowflake.png, lightning.png
+### 🧪 Testability
 
-Replace the Weather API key in AppConstants
+- Separated service layer
+- Pure functions and dependency injection
 
-Launch the app:
+---
+
+## 🚀 Getting Started
+
+1. **Install Flutter** (version 3.2.0 or higher)
+2. **Clone the repo**:
+   ```bash
+   git clone https://github.com/AgaranAR/Flutter-Dynamic-WeatherApp.git
+Install dependencies:
+
+bash
+Copy
+Edit
+flutter pub get
+Add images to assets/images/ folder:
+
+sun.png
+
+moon.png
+
+cloud.png
+
+stormcloud.png
+
+raindrop.png
+
+snowflake.png
+
+lightning.png
+
+Run the app:
 
 bash
 Copy
@@ -60,15 +98,24 @@ shared_preferences
 
 intl
 
-🔮 Future Plans
-Riverpod or Provider integration
+provider (optional for future)
 
-Multi-location support
+🔧 Weather API
+This app uses WeatherAPI.com for real-time weather data.
+Replace the API key in AppConstants with your own.
 
-7-day forecast
+🔮 Future Improvements
+State management with Provider or Riverpod
 
-Custom themes
+Multiple location support
 
-🪪 License
-MIT License
+Additional themes and weather effects
 
+Unit and widget testing
+
+Weather forecast integration
+
+Auto-detect location
+
+📝 License
+This project is open source and available under the MIT License.
